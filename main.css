@@ -9,7 +9,7 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
 
 }
 #container{
-    height:400px;
+    height:450px;
     width:550px;
     background-color: rgb(4, 4, 78);
     margin: 100px auto;
@@ -30,6 +30,10 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
     box-shadow: 0px 4px 0px #9DA853;
     -moz-box-shadow: 0px 4px 0px #9DA853;
     -webkit-box-shadow: 0px 4px 0px #9DA853;
+}
+
+#operation{
+    float: right;
 }
 
 #correct{

@@ -128,10 +128,10 @@ const show=(Id)=> {
 //Generate questions and multiple answers (Q&A)
 
 const generateQA=()=>{
-    let x = 1+ Math.round(15*Math.random());
-    let y = 1+ Math.round(15*Math.random());
-    correctAnswer = x*y;
-    document.getElementById("question").innerHTML = x + "x" + y;
+    let x = 1+ Math.round(20*Math.random());
+    let y = 1+ Math.round(20*Math.random());
+    correctAnswer = x+y;
+    document.getElementById("question").innerHTML = x + "+" + y;
     let correctPosition = 1+ Math.round(3*Math.random());
     
     document.getElementById("box"+correctPosition).innerHTML = correctAnswer; //Fill one box with the correct answer

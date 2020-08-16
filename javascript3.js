@@ -130,8 +130,9 @@ const show=(Id)=> {
 const generateQA=()=>{
     let x = 1+ Math.round(15*Math.random());
     let y = 1+ Math.round(15*Math.random());
-    correctAnswer = x*y;
-    document.getElementById("question").innerHTML = x + "x" + y;
+    if(x>=y){
+    correctAnswer = x-y;
+    document.getElementById("question").innerHTML = x + "-" + y;
     let correctPosition = 1+ Math.round(3*Math.random());
     
     document.getElementById("box"+correctPosition).innerHTML = correctAnswer; //Fill one box with the correct answer
@@ -150,4 +151,5 @@ document.GetElementById("box"+i).innerHTML = wrongAnswer;
         answers.push(wrongAnswer);
         }
     }
+}
 }
