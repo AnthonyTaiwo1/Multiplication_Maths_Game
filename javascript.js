@@ -143,7 +143,7 @@ const generateQA=()=>{
         if(i != correctPosition) {
             let wrongAnswer
             do{
-                wrongAnswer = (1+Math.round(9*Math.random()))*(1+Math.round(9*Math.random())); //A wrong answer
+                wrongAnswer = (1+Math.round(20*Math.random()))*(1+Math.round(20*Math.random())); //A wrong answer
             }while(answers.indexOf(wrongAnswer)>-1)
 
 document.GetElementById("box"+i).innerHTML = wrongAnswer;

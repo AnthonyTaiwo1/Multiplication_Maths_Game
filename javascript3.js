@@ -128,8 +128,8 @@ const show=(Id)=> {
 //Generate questions and multiple answers (Q&A)
 
 const generateQA=()=>{
-    let x = 1+ Math.round(15*Math.random());
-    let y = 1+ Math.round(15*Math.random());
+    let x = 1+ Math.round(19*Math.random());
+    let y = 1+ Math.round(19*Math.random());
     if(x>=y){
     correctAnswer = x-y;
     document.getElementById("question").innerHTML = x + "-" + y;
@@ -144,7 +144,7 @@ const generateQA=()=>{
         if(i != correctPosition) {
             let wrongAnswer
             do{
-                wrongAnswer = (1+Math.round(9*Math.random()))*(1+Math.round(9*Math.random())); //A wrong answer
+                wrongAnswer = (1+Math.round(19*Math.random()))*(1+Math.round(19*Math.random())); //A wrong answer
             }while(answers.indexOf(wrongAnswer)>-1)
 
 document.GetElementById("box"+i).innerHTML = wrongAnswer;
