@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{font-family: 'Lobster', cursive;}
 html{
     height: 100%;
 background:radial-gradient(circle,#fff,#ccc);
@@ -9,7 +11,7 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
 #container{
     height:400px;
     width:550px;
-    background-color: #9DD2EA;
+    background-color: rgb(4, 4, 78);
     margin: 100px auto;
     padding: 20px;
     border-radius: 10px;
@@ -19,10 +21,11 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
     position: relative;
 }
 #score{
-    background-color: #F1FF92;
-    color: #888E5F;
+    background-color: #34addd;
+    color: #191a16;
     padding: 11px;
-    position: absolute;
+    /* position: absolute; */
+    float: left;
     left: 500px;
     box-shadow: 0px 4px 0px #9DA853;
     -moz-box-shadow: 0px 4px 0px #9DA853;
@@ -50,7 +53,8 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
     width: 450px;
     height: 150px;
     margin: 50px auto 10px auto;
-    background-color: #9da0ea;
+    background-color: #6d6e86;
+    border-radius: 20px;
     box-shadow: 0px 4px #535aa8;
     -moz-box-shadow: 0px 4px #535aa8;
     -webkit-box-shadow: 0px 4px #535aa8;
@@ -63,10 +67,12 @@ background:-moz-radial-gradient(circle, #fff, #ccc);
 #instruction{
     width: 450px;
     height: 50px;
-    background-color:  #B481d9;
+    font-weight: bold;
+    background-color:  #7528da;
     margin: 10px auto;
     text-align: center;
     line-height: 45px;
+    border-radius: 20px;
     box-shadow: 0px 4px #8153a8;
     -moz-box-shadow: 0px 4px #8153a8;
     -webkit-box-shadow: 0px 4px #8153a8;
@@ -100,14 +106,14 @@ transition: all 0.2s;
 
 }
 .box:hover, #startreset:hover{
-    background-color:#9c89f6 ;
+    background-color:rgb(217, 203, 158);
     color: white;
     box-shadow: 0px 4px #6b54d3;
     -moz-box-shadow: 0px 4px #6b54d3;
     -webkit-box-shadow: 0px 4px #6b54d3;
 }
 .box:active, #startreset:active{
-    box-shadow: 0px 0px #6b54d3;
+    box-shadow: 0px 0px #5e42d8;
     -moz-box-shadow: 0px 0px #6b54d3;
     -webkit-box-shadow: 0px 0px #6b54d3;
     top: 4px;
@@ -144,7 +150,7 @@ transition: all 0.2s;
      position: absolute;
      top: 395px;
      left: 400px;
-     background-color: rgba(181, 235, 36, 0.8);
+     background-color: rgba(217, 203, 158,0.8);
      border-radius: 3px;
      box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
@@ -180,7 +186,7 @@ transition: all 0.2s;
      left: 400px;
      margin-top: -40px;
      margin-left: -10px;
-     background-color: rgba(181, 235, 36, 0.8);
+     background-color: rgba(217, 203, 158,0.8);
      border-radius: 3px;
      box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
