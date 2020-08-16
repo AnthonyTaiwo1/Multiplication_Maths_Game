@@ -1,8 +1,8 @@
-var playing = false;
-var score;
-var action;
-var timeremaining;
-var correctAnswer;
+let playing = false;
+let score;
+let action;
+let timeremaining;
+let correctAnswer;
 
 //If we click on the start/reset button
 document.getElementById("startreset").onclick = function(){
@@ -128,11 +128,11 @@ const show=(Id)=> {
 //Generate questions and multiple answers (Q&A)
 
 const generateQA=()=>{
-    var x = 1+ Math.round(9*Math.random());
-    var y = 1+ Math.round(9*Math.random());
+    let x = 1+ Math.round(9*Math.random());
+    let y = 1+ Math.round(9*Math.random());
     correctAnswer = x*y;
     document.getElementById("question").innerHTML = x + "x" + y;
-    var correctPosition = 1+ Math.round(3*Math.random());
+    let correctPosition = 1+ Math.round(3*Math.random());
     
     document.getElementById("box"+correctPosition).innerHTML = correctAnswer; //Fill one box with the correct answer
     
