@@ -130,7 +130,7 @@ const show=(Id)=> {
 const generateQA=()=>{
     let x = 1+ Math.round(19*Math.random());
     let y = 1+ Math.round(19*Math.random());
-    if(x>=y){
+    
     correctAnswer = x-y;
     document.getElementById("question").innerHTML = x + "-" + y;
     let correctPosition = 1+ Math.round(3*Math.random());
@@ -144,12 +144,12 @@ const generateQA=()=>{
         if(i != correctPosition) {
             let wrongAnswer
             do{
-                wrongAnswer = (1+Math.round(19*Math.random()))*(1+Math.round(19*Math.random())); //A wrong answer
+                wrongAnswer = (1+Math.round(19*Math.random()))-(1+Math.round(19*Math.random())); //A wrong answer
             }while(answers.indexOf(wrongAnswer)>-1)
 
 document.GetElementById("box"+i).innerHTML = wrongAnswer;
         answers.push(wrongAnswer);
         }
     }
-}
+
 }
